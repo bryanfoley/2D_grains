@@ -1,6 +1,11 @@
 void set_static_positions(double wall_particle[44][m_max][z_max],double rad)
 {
      int i;
+     char func_name[35] = "set_static_positions";
+     char action_begin[10] = ">>>";
+     char action_end[10] = "<<<";
+     time_stamp();
+     trace(func_name,action_begin);
 /*________________________________BOTTOM ROW__________________________________*/     
      /*Set the FIRST BOTTOM ROW particle, right edge, at x = -5.0*/
      wall_particle[0][2][0] = -5.5;
@@ -31,4 +36,6 @@ void set_static_positions(double wall_particle[44][m_max][z_max],double rad)
       {
        wall_particle[i][2][0] = ((wall_particle[i-1][2][0]) + 1.0);
       }
+     time_stamp();
+     trace(func_name,action_end);
 }
