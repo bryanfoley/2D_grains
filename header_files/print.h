@@ -1,5 +1,10 @@
 void print(double free_particle[n_max][m_max][z_max],double packing)
-{  
+{
+    char func_name[30] = "print";
+    char action_begin[10] = ">>>";
+    char action_end[10] = "<<<";
+    time_stamp();
+    trace(func_name,action_begin);  
     for(i = 0; i < n_max; i++)
      {
      /*Print Positions and Velocities to file 'positions.dat' and 'velocities.dat'*/
@@ -15,4 +20,6 @@ void print(double free_particle[n_max][m_max][z_max],double packing)
      fprintf(fptr9,"%lf\t%lf\t",wall_particle[i][2][0],wall_particle[i][3][0]);
      }
     fprintf(fptr9,"\n");
+    time_stamp();
+    trace(func_name,action_end);
 }
