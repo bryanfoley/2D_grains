@@ -2,6 +2,11 @@ double potential(double x[n_max][n_max],double image_x[n_max][n_max],double wall
 {
        
        double potential = 0.0000000000000000;
+       char func_name[30] = "potential";
+       char action_begin[10] = ">>>";
+       char action_end[10] = "<<<";
+       time_stamp();
+       trace(func_name,action_begin);
        
        /*Calculate the Potential energy between free_particle pairs*/
        for(i = 0; i < n_max; i++)
@@ -31,4 +36,6 @@ double potential(double x[n_max][n_max],double image_x[n_max][n_max],double wall
         }
  
        return(potential);
+       time_stamp();
+       trace(func_name,action_end);
 }
