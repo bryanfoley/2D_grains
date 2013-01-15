@@ -3,7 +3,7 @@ void attain_positions (double free_particle[n_max][m_max][z_max],
                        double wall_particle[44][m_max][z_max])
 {
      int i;
-     char func_name[15] = "attain_positions";      
+     char func_name[30] = "attain_positions";      
      char action_begin[10] = ">>>";      
      char action_end[10] = "<<<";      
      time_stamp();      
