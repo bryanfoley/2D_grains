@@ -14,6 +14,11 @@ void initiate( double free_particle[n_max][m_max][z_max],
 {
      /*Counters*/
      int i,j,l,m,n,z;
+     char func_name[30] = "initiate";
+     char action_begin[10] = ">>>";
+     char action_end[10] = "<<<";
+     time_stamp();
+     trace(func_name,action_begin);
      
 
       /*Set PARTICLE ARRAYS to zero*/
@@ -110,5 +115,7 @@ void initiate( double free_particle[n_max][m_max][z_max],
       {
        wall_particle[i][1][0] = wall_speed;
       }
-printf("Done initialising!\n");
+     printf("Done initialising!\n");
+     time_stamp();
+     trace(func_name,action_end);
 }
