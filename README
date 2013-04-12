@@ -1,0 +1,1 @@
+This repo, Dev, contains the code for a simulation environment of circular grains in 2 Dimensions. The code is both in C and C++, with analysis tooling in Matlab code and test code in Python.
