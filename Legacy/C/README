@@ -1,1 +1,4 @@
+2D Grains Legacy Code in C
+=======================
+
 This dir contains the legacy code from previous C implementations of granular simulations and will be used, partially, to create the newer C implementation in 2D_grains_c
