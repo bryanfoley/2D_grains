@@ -1,0 +1,67 @@
+#-----------------------------------------------------------------------------#
+#                                                                             #
+#                           Data Definition File                              #
+#                                                                             #
+#-----------------------------------------------------------------------------#
+#
+# Ident        : srctempl.ddf
+# Author       : <author's name> [<author's company>]
+# Description  : <description>
+#
+# History
+# yyyy-mm-dd   : <SWCHG> <author> [<platform> <release>]
+#                <History comment>
+#
+#-----------------------------------------------------------------------------#
+#                                                                             #
+#                  Copyright (c) 2013, ASML Netherlands B.V.                  #
+#                             All rights reserved                             #
+#                                                                             #
+#-----------------------------------------------------------------------------#
+
+#-----------------------------------------------------------------------------#
+#                                     Defines                                 #
+#-----------------------------------------------------------------------------#
+
+#-----------------------------------------------------------------------------#
+#                                     Enums                                   #
+#-----------------------------------------------------------------------------#
+
+#-----------------------------------------------------------------------------#
+#                                     Structs                                 #
+#-----------------------------------------------------------------------------#
+
+#-----------------------------------------------------------------------------#
+#                                    Interfaces                               #
+#-----------------------------------------------------------------------------#
+
+##! \brief {short interface description}
+##! \details {detailed interface description}
+interface <CC>XA
+{
+   ##! \brief {short description}
+   ##! \pre   {description}
+   ##! \post  {description}
+   ##! \note  {text}
+   trigger trigger_name
+   (
+   );
+
+   ##! \brief   {short description}
+   ##! \param[in]      par1  {description}
+   ##! \param[in,out]  par2  {description}
+   ##! \param[out]     par3  {description}
+   ##! \return  {description}
+   ##! \pre     {description}
+   ##! \post    {description}
+   ##! \note    {text}
+   function func1
+   (
+      in     int     par1;
+      inout  double  par2;
+      out    char    par3;
+   );
+   
+}
+
+#----------------------------------- End of file -----------------------------#
